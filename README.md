@@ -1,6 +1,6 @@
 # Doctrine orm left join bug reproduction
 
-Thank you for taking the time to investigate my bug reproduction!
+Thank you for taking the time to investigate [my bug](https://github.com/doctrine/orm/issues/9807) reproduction!
 
 Please do the following:
 
