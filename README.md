@@ -8,7 +8,7 @@ Please do the following:
 make dev-build
 make dev-start
 make sh
-bin/console doctrine:migrations:migrate
+bin/console doctrine:migrations:migrate # if missing symfony/runtime is reported, just wait a couple of seconds, the entrypoint still doing its job
 bin/console app:create-test-data
 ```
 
