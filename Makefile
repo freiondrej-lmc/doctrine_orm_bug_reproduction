@@ -12,12 +12,12 @@ SYMFONY  = $(PHP_CONT) bin/console
 
 dev-start:
 	#docker-compose -f docker-compose.yml -f docker-compose.debug.yml --env-file docker/.env.local up -d
-	docker-compose -f docker-compose.yml -f docker-compose.override.yml --env-file docker/.env.local up -d
+	docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 dev-build:
 	#docker-compose -f docker-compose.yml -f docker-compose.debug.yml --env-file docker/.env.local up -d --build
 	#docker-compose -f docker-compose.yml -f docker-compose.override.yml --env-file docker/.env.local up -d --build
-	docker-compose -f docker-compose.yml -f docker-compose.override.yml --env-file docker/.env.local build --no-cache
+	docker-compose -f docker-compose.yml -f docker-compose.override.yml build --no-cache
 
 dev-stop:
 	#docker-compose -f docker-compose.yml -f docker-compose.debug.yml down
